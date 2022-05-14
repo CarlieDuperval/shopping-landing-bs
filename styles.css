@@ -1,0 +1,63 @@
+/* control our margin and padding don't let CSS control it for us (sudo class) */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* We don't have to repeat our self, We are declaring variable   */
+:root{
+    --purple: #515fbc;
+    --gray-light: #8e99a1;
+    --blue-dark:#1e262f;
+    --White: #fefefe;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');
+
+body {
+    background-color: var(--purple);
+    /* grabs from google front */
+    font-family: 'Roboto', sans-serif;
+    color: var(--White);
+    text-align: center;
+}
+main{
+    background-color: var(--purple);
+}
+
+h1 {
+    font-size: 50px
+}
+
+/* to change the screen size */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 20px;     
+    }
+}
+
+.btn-custom {
+    background-color: var(--blue-dark);
+    border: none;
+}
+
+.btn-custom:hover{
+    background-color: var(--gray-light);
+    color:var(--blue-dark)
+
+}
+
+.form-custom{
+width: 200px;
+margin-right: 10px;
+}
+
+small {
+    line-height: 2px;
+}
+.img-wages > img{
+    width: 100%;
+}
